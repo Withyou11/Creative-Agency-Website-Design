@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative Agency Website Design</title>
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -158,16 +160,19 @@
                 src="./assets/img/hero-1.jpg"
                 alt="creative design agency"
                 class="hero__img"
+                data-aos="zoom-in-down"
               />
               <img
                 src="./assets/img/hero-2.jpg"
                 alt="creative design agency"
                 class="hero__img_2"
+                data-aos="zoom-in-up"
               />
               <img
                 src="./assets/img/hero-3.jpg"
                 alt="creative design agency"
                 class="hero__img"
+                data-aos="zoom-in-down"
               />
             </div>
           </div>
@@ -331,6 +336,7 @@
                   src="./assets/img/process.png"
                   alt=""
                   class="process__img"
+                  data-aos="fade-down-left"
                 />
               </div>
             </div>
@@ -688,5 +694,11 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>
